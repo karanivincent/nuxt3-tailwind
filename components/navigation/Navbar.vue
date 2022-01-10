@@ -28,7 +28,7 @@ export default {
 
   data() {
     return {
-      mobileMenuOpen: true
+      mobileMenuOpen: false
     }
   },
 

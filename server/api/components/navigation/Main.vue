@@ -11,7 +11,7 @@
               <span class="sr-only">Workflow</span>
               <img
                 class="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white"
+                src="https://tailwindui.com/img/assets/logos/workflow-mark.svg?color=white"
                 alt
               />
             </a>
@@ -137,7 +137,7 @@
           <a href="#" class="lg:hidden">
             <span class="sr-only">Workflow</span>
             <img
-              src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white"
+              src="https://tailwindui.com/img/assets/logos/workflow-mark.svg?color=white"
               alt
               class="h-8 w-auto"
             />

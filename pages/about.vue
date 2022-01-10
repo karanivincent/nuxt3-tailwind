@@ -8,7 +8,7 @@
     <div>
         <div
             ref="mynav"
-            class="fixed transition bg-gray-900 duration-500 inset-x-0 top-0 z-40 text-red-500"
+            class="fixed transition bg-gray-900 duration-500 inset-x-0 top-0 z-40 text-white"
         >
             <navigation-navbar />
         </div>

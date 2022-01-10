@@ -50,10 +50,10 @@
                 </div>
                 <div class="mt-20 flex flex-col gap-6">
                     <div class="rounded overflow-hidden">
-                        <img src="../pictures/electricity-poles1.jpg" alt="about us" class="w-full" />
+                        <img src="/pictures/electricity-poles1.jpg" alt="about us" class="w-full" />
                     </div>
                     <div class="rounded overflow-hidden">
-                        <img src="../pictures/power-plant2.jpg" alt="about us" class="w-full" />
+                        <img src="/pictures/power-plant2.jpg" alt="about us" class="w-full" />
                     </div>
                 </div>
             </div>

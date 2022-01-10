@@ -1,6 +1,9 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   // mode: "jit",
-  purge: [
+  content: [
     "./components/**/*.{vue,js}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
@@ -8,12 +11,24 @@ module.exports = {
     "./nuxt.config.{js,ts}",
     "./app.vue",
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        'warm-gray': colors.warmGray,
+        teal: colors.teal,
+      },
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 }

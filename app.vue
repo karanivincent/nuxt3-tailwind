@@ -1,15 +1,27 @@
-<script lang="ts" setup>
+<script lang="ts" >
 import './assets/tailwind.scss'
+
+
+
 </script>
 
+
 <template>
-<div class="container mx-auto flex p-4 justify-center">
-   <NuxtPage />
-</div>
+  <div class="bg-white">
+    <main class="bg-gray-100">
+      <NuxtPage />
+    </main>
+    <footer class="bg-gray-800" aria-labelledby="footer-heading">
+      <Footer />
+    </footer>
+  </div>
 </template>
 
-<style>
-p, div {
-  @apply mb-4;
+<style lang="scss">
+// body {
+//   @apply bg-gray-50 dark:bg-gray-800;
+// }
+.global-text {
+  @apply text-gray-900 dark:text-gray-50;
 }
 </style>

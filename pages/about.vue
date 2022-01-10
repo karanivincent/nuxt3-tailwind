@@ -50,7 +50,11 @@
                 </div>
                 <div class="mt-20 flex flex-col gap-6">
                     <div class="rounded overflow-hidden">
-                        <img src="../assets/pictures/power-plant.png" alt="about us" class="w-full" />
+                        <img
+                            src="../assets/pictures/electricity-poles1.jpg"
+                            alt="about us"
+                            class="w-full"
+                        />
                     </div>
                     <div class="rounded overflow-hidden">
                         <img

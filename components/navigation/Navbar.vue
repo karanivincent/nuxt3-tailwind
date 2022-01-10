@@ -14,7 +14,7 @@
         <nav aria-label="Top">
           <div class>
             <!-- <NavigationTopbar /> -->
-            <NavigationMain />
+            <NavigationMain @openMenu="mobileMenuOpen = true" />
           </div>
         </nav>
       </header>
@@ -28,7 +28,7 @@ export default {
 
   data() {
     return {
-      mobileMenuOpen: false
+      mobileMenuOpen: true
     }
   },
 

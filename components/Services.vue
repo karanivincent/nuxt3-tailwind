@@ -35,19 +35,19 @@ const features = [
     {
         name: 'Installation and Support',
         description: 'The application of knowledge, skills, tools and techniques to activities in order to meet the requirements of a project.',
-        imageSrc: '../assets/pictures/installation.jpg',
+        imageSrc: '../pictures/installation.jpg',
         imageAlt: 'Installation and support.',
     },
     {
         name: 'Transformer Testing',
         description: 'We provide a comprehensive range of services like transformer testing for industrial plants and facilities.',
-        imageSrc: '../assets/pictures/transformer.jpg',
+        imageSrc: '../pictures/transformer.jpg',
         imageAlt: 'Green cardstock box open with 50 cards inside.',
     },
     {
         name: 'Doble DSA',
         description: 'As a leader in our industry, we have always worked to develop advanced technology and innovative methods.',
-        imageSrc: '../assets/pictures/board-presentation.jpg',
+        imageSrc: '../pictures/board-presentation.jpg',
         imageAlt: 'Detail of white today card, beige next card, and brown someday card with dot grid.',
     }
 ]

@@ -43,7 +43,7 @@
             <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
             <!-- <img
               class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-              src="~/assets/pictures/future.jpg"
+              src="~/pictures/future.jpg"
               alt
             />-->
           </div>

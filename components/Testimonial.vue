@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
     <div class="px-12 sm:px-20 py-20 flex flex-col mx-auto prose sm:prose-2xl">
-        <!-- style="background-image: url('../assets/backgrounds/testimonial.svg');" -->
+        <!-- style="background-image: url('../backgrounds/testimonial.svg');" -->
         <div class="relative mx-auto">
             <div class="relative">
                 <div class="relative flex flex-col lg:col-span-3">

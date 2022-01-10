@@ -1,28 +1,18 @@
 
-<style>
-.nav-transparent {
-    @apply bg-opacity-70;
-}
-</style>
+
 <template>
     <div>
-        <div
-            ref="mynav"
-            class="fixed transiton bg-gray-900 duration-500 inset-x-0 top-0 z-40 text-white"
-        >
-            <navigation-navbar />
-        </div>
-        <div class="pt-14 pb-16 sm:pb-24">
-            <div class="mt-8 max-w-2xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                <div class="lg:grid lg:grid-cols-12 lg:auto-rows-min lg:gap-x-8">
-                    <div class="lg:col-start-8 lg:col-span-5">
-                        <div class="flex justify-between">
-                            <!-- <h1 class="text-xl font-medium text-gray-900">{{ product.name }}</h1> -->
-                        </div>
+        <div class="pt-8 pb-16 sm:pb-24">
+            <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+                <div class="my-8">
+                    <div class="flex justify-between">
+                        <h1 class="text-2xl font-medium text-gray-900">{{ product.name }}</h1>
                     </div>
-
+                </div>
+                <div class="lg:grid lg:grid-cols-12 lg:auto-rows-min lg:gap-x-8">
                     <div
-                        class="mt-8 lg:mt-0 lg:col-start-1 lg:col-span-6 lg:row-start-1 lg:row-span-3"
+                        v-if="product.imageSrc !== ''"
+                        class="mt-8 lg:mt-0 lg:col-start-1 lg:col-span-6 lg:row-start-1 lg:row-span-1"
                     >
                         <h2 class="sr-only">Images</h2>
 
@@ -35,25 +25,14 @@
                         </div>
                     </div>
 
-                    <div class="lg:col-span-5">
-                        <div v-for=" item in product.details" :key="item.id" class="mt-10">
-                            <h2 class="text-sm font-medium text-gray-900">{{ item.title }}</h2>
+                    <div
+                        v-for=" item in product.details"
+                        :key="item.id"
+                        class="mt-10 col-span-12 lg:col-span-6"
+                    >
+                        <h2 class="text-sm font-medium text-gray-900">{{ item.title }}</h2>
 
-                            <div
-                                class="mt-4 prose prose-sm text-gray-500"
-                                v-html="item.description"
-                            />
-                        </div>
-
-                        <!-- <div class="mt-8 border-t border-gray-200 pt-8">
-                            <h2 class="text-sm font-medium text-gray-900">Fabric &amp; Care</h2>
-
-                            <div class="mt-4 prose prose-sm text-gray-500">
-                                <ul role="list">
-                                    <li v-for="item in product.details" :key="item">{{ item }}</li>
-                                </ul>
-                            </div>
-                        </div>-->
+                        <div class="mt-4 prose prose-sm text-gray-500" v-html="item.description" />
                     </div>
                 </div>
             </div>
@@ -71,7 +50,7 @@ const products = [
         slug: 'cable-fault',
         name: 'Cable Fault',
         category: 'cable-fault',
-        imageSrc: '../assets/pictures/cable-fault-location.jpg',
+        imageSrc: '../pictures/cable-fault-location.jpg',
         // imageSrc: '../',
         imageAlt: "Cable fault image",
 
@@ -242,7 +221,7 @@ const products = [
         slug: 'circuit-breaker-test',
         name: 'Circuit Breaker Test',
         category: 'circuit-breaker-test',
-        imageSrc: '../assets/pictures/Circuit-breaker-test.jpg',
+        imageSrc: '../pictures/Circuit-breaker-test.jpg',
         imageAlt: "Circuit Breaker Test",
 
 
@@ -266,7 +245,7 @@ const products = [
         slug: 'electrical-tester',
         name: 'Electrical Tester',
         category: 'test-equipment',
-        imageSrc: '../assets/pictures/earth-testers.jpg',
+        imageSrc: '../pictures/earth-testers.jpg',
         imageAlt: "Earth Tester",
 
 
@@ -462,7 +441,7 @@ const products = [
         slug: 'sf6-product-range',
         name: 'SF6 Product Range',
         category: 'gas',
-        imageSrc: '../assets/pictures/sf6-product-range.png',
+        imageSrc: '../pictures/sf6-product-range.png',
         imageAlt: " SF6 Product Range",
 
 
@@ -1992,10 +1971,6 @@ export default {
         RadioGroupLabel,
         RadioGroupOption,
     },
-    mounted() {
-        this.addScrollWatch();
-
-    },
     computed: {
         product: function () {
             let product = products.find(product => product.slug === this.product_slug);
@@ -2005,19 +1980,7 @@ export default {
 
     },
 
-    methods: {
-        addScrollWatch() {
-            var myNav = this.$refs.mynav;
-            window.onscroll = function () {
-                "use strict"; if (window.pageYOffset >= 20) {
-                    myNav.classList.add("nav-transparent");
-                } else {
-                    myNav.classList.remove("nav-transparent");
-                }
-            };
-        },
 
-    },
 
 }
 </script>

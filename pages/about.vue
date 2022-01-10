@@ -8,7 +8,7 @@
     <div>
         <div
             ref="mynav"
-            class="fixed transiton bg-gray-900 duration-500 inset-x-0 top-0 z-40 text-white"
+            class="fixed transition bg-gray-900 duration-500 inset-x-0 top-0 z-40 text-red-500"
         >
             <navigation-navbar />
         </div>
@@ -50,18 +50,10 @@
                 </div>
                 <div class="mt-20 flex flex-col gap-6">
                     <div class="rounded overflow-hidden">
-                        <img
-                            src="../assets/pictures/electricity-poles1.jpg"
-                            alt="about us"
-                            class="w-full"
-                        />
+                        <img src="../pictures/electricity-poles1.jpg" alt="about us" class="w-full" />
                     </div>
                     <div class="rounded overflow-hidden">
-                        <img
-                            src="../assets/pictures/power-plant2.jpg"
-                            alt="about us"
-                            class="w-full"
-                        />
+                        <img src="../pictures/power-plant2.jpg" alt="about us" class="w-full" />
                     </div>
                 </div>
             </div>

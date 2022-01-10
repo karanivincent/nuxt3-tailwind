@@ -14,7 +14,7 @@
     </div>
     <div
       class="backdrop-filter bg-bottom bg-cover bg-no-repeat"
-      style="background-image: url('../assets/backgrounds/american-power.jpg');"
+      style="background-image: url('../backgrounds/american-power.jpg');"
     >
       <div class="bg-black bg-opacity-50">
         <Hero />

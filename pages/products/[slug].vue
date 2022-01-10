@@ -72,7 +72,7 @@ const products = [
         slug: 'cable-fault',
         name: 'Cable Fault',
         category: 'cable-fault',
-        imageSrc: '../assets/pictures/cable-fault-location.jpg',
+        imageSrc: '../pictures/cable-fault-location.jpg',
         imageAlt: "Cable fault image",
 
 
@@ -242,7 +242,7 @@ const products = [
         slug: 'circuit-breaker-test',
         name: 'Circuit Breaker Test',
         category: 'circuit-breaker-test',
-        imageSrc: '../assets/pictures/Circuit-breaker-test.jpg',
+        imageSrc: '../pictures/Circuit-breaker-test.jpg',
         imageAlt: "Circuit Breaker Test",
 
 
@@ -266,7 +266,7 @@ const products = [
         slug: 'electrical-test',
         name: 'Electrical Tester',
         category: 'circuit-breaker-test',
-        imageSrc: '../assets/pictures/earth-testers.jpg',
+        imageSrc: '../pictures/earth-testers.jpg',
         imageAlt: "Earth Tester",
 
 
@@ -462,7 +462,7 @@ const products = [
         slug: 'sf6-product-range',
         name: 'SF6 Product Range',
         category: 'sf6-product-range',
-        imageSrc: '../assets/pictures/sf6-product-range.png',
+        imageSrc: '../pictures/sf6-product-range.png',
         imageAlt: " SF6 Product Range",
 
 

@@ -9,7 +9,7 @@
           <div class="hidden lg:flex-1 lg:flex lg:items-center">
             <a href="#">
               <span class="sr-only">Workflow</span>
-              <img class="h-16 w-auto" src="~/assets/logos/synergylogo.svg" alt />
+              <img class="h-16 w-auto" src="logos/synergylogo.svg" alt />
             </a>
           </div>
 
@@ -69,10 +69,9 @@
             </a>
           </div>
 
-          <!-- Logo (lg-) -->
           <a href="#" class="lg:hidden">
             <span class="sr-only">Workflow</span>
-            <img src="~/assets/logos/synergylogo.svg" alt class="h-8 w-auto" />
+            <img src="logos/synergylogo.svg" alt class="h-8 w-auto" />
           </a>
 
           <div class="flex-1 flex items-center justify-end"></div>

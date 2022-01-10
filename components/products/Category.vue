@@ -116,7 +116,7 @@
 
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             <div class="py-10">
-                <h1 class="text-4xl font-extrabold tracking-tight text-gray-900">Our Products</h1>
+                <h1 class="text-3xl font-extrabold tracking-tight text-gray-900">Our Products</h1>
             </div>
 
             <section aria-labelledby="filter-heading" class="border-t border-gray-200 py-6">

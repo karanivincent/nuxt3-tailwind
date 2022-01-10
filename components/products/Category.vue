@@ -36,7 +36,20 @@
                                 @click="open = false"
                             >
                                 <span class="sr-only">Close menu</span>
-                                <XIcon class="h-6 w-6" aria-hidden="true" />
+                                <svg
+                                    class="w-6 h-6"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12"
+                                    />
+                                </svg>
                             </button>
                         </div>
 
@@ -55,10 +68,21 @@
                                     >
                                         <span class="font-medium text-gray-900">{{ section.name }}</span>
                                         <span class="ml-6 flex items-center">
-                                            <ChevronDownIcon
+                                            <svg
                                                 :class="[open ? '-rotate-180' : 'rotate-0', 'h-5 w-5 transform']"
-                                                aria-hidden="true"
-                                            />
+                                                fill="none"
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M19 9l-7 7-7-7"
+                                                />
+                                            </svg>
+                                            ]
                                         </span>
                                     </DisclosureButton>
                                 </h3>
@@ -112,10 +136,20 @@
                                     class="group inline-flex items-center justify-center text-sm font-medium text-gray-700 hover:text-gray-900"
                                 >
                                     Categories
-                                    <ChevronDownIcon
+                                    <svg
                                         class="flex-shrink-0 -mr-1 ml-1 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                                        aria-hidden="true"
-                                    />
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M19 9l-7 7-7-7"
+                                        />
+                                    </svg>
                                 </PopoverButton>
                             </div>
 
@@ -150,10 +184,20 @@
                                     class="group inline-flex items-center justify-center text-sm font-medium text-gray-700 hover:text-gray-900"
                                 >
                                     Products
-                                    <ChevronDownIcon
+                                    <svg
                                         class="flex-shrink-0 -mr-1 ml-1 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                                        aria-hidden="true"
-                                    />
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M19 9l-7 7-7-7"
+                                        />
+                                    </svg>
                                 </PopoverButton>
                             </div>
 
@@ -280,8 +324,6 @@ import {
     TransitionChild,
     TransitionRoot,
 } from '@headlessui/vue'
-import { XIcon } from '@heroicons/vue/outline'
-import { ChevronDownIcon, FilterIcon, MinusSmIcon, PlusSmIcon, ViewGridIcon } from '@heroicons/vue/solid'
 
 export default {
     components: {
@@ -299,12 +341,6 @@ export default {
         PopoverPanel,
         TransitionChild,
         TransitionRoot,
-        ChevronDownIcon,
-        FilterIcon,
-        MinusSmIcon,
-        PlusSmIcon,
-        ViewGridIcon,
-        XIcon,
     },
     data() {
         return {
@@ -320,21 +356,16 @@ export default {
     computed: {
         secondaryMenu: function () {
             let category = this.filters.find(filter => filter.id === this.selectedCategory);
-            console.log('category', category)
             return category.options
         },
         selectedProduct: function () {
             let product = null
-            console.log('this.selectedItem', this.selectedItem)
-            console.log('secondaryMenu', this.secondaryMenu)
+
             if (this.selectedItem === '') {
-                console.log('niko kwa if')
                 product = this.secondaryMenu[0].value
             } else {
-                console.log('niko kwa else')
                 product = this.selectedItem;
             }
-            console.log('product', product)
             return product
 
         },
@@ -352,7 +383,6 @@ export default {
 
         },
         onSelectItem(value, close) {
-            console.log('value', value)
             close()
             this.selectedItem = value
         }

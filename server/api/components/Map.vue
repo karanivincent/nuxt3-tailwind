@@ -9,12 +9,10 @@
 				loading="lazy"
 				allowfullscreen
 				:src="'https://www.google.com/maps/api/staticmap?center=PRJ9+RXF,Nairobi+City&key=' + google_api">
-			</iframe> -->
-
+            </iframe>-->
         </div>
 
-        <button @click="wachatu"> Wachatu</button>
-
+        <button @click="wachatu">Wachatu</button>
     </div>
 </template>
 <script>
@@ -27,14 +25,9 @@ export default {
     // },
 
     setup() {
-        const wachatu = ()=> {
-            console.log('yapili sasa')
-        }
 
-        console.log(process.env)
 
         const google_api =  process.env.VUE_APP_GOOGLE_MAPS_KEY;
-        console.log(google_api)
 
         return {
             google_api,
@@ -45,5 +38,4 @@ export default {
 }
 </script>
 <style>
-
 </style>

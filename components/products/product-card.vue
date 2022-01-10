@@ -1977,7 +1977,6 @@ const products = [
 
 
 ]
-import { StarIcon } from '@heroicons/vue/solid'
 import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue'
 
 
@@ -1992,17 +1991,14 @@ export default {
         RadioGroup,
         RadioGroupLabel,
         RadioGroupOption,
-        StarIcon,
     },
     mounted() {
         this.addScrollWatch();
-        console.log('mounted', this.product_slug);
 
     },
     computed: {
         product: function () {
             let product = products.find(product => product.slug === this.product_slug);
-            console.log('product', product);
             return product
         },
 
@@ -2013,12 +2009,9 @@ export default {
         addScrollWatch() {
             var myNav = this.$refs.mynav;
             window.onscroll = function () {
-                console.log(window.pageYOffset);
                 "use strict"; if (window.pageYOffset >= 20) {
-                    console.log('above 20')
                     myNav.classList.add("nav-transparent");
                 } else {
-                    console.log('below 20')
                     myNav.classList.remove("nav-transparent");
                 }
             };

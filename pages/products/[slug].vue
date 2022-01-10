@@ -63,40 +63,9 @@
 
 <script>
 import { ref } from 'vue'
-import { StarIcon } from '@heroicons/vue/solid'
 import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue'
 
 const products = [
-    // {
-    //     id: 1,
-    //     slug: 'leather-long-wallet',
-    //     name: 'Leather Long Wallet',
-    //     category: 'power',
-    //     price: '$75',
-    //     href: 'leather-long-wallet',
-    //     imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-04-trending-product-02.jpg',
-    //     imageAlt: 'Hand stitched, orange leather long wallet.',
-    //     images: [
-    //         {
-    //             id: 1,
-    //             imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-featured-product-shot.jpg',
-    //             imageAlt: "Back of women's Basic Tee in black.",
-    //             primary: true,
-    //         },
-
-    //     ],
-
-    //     description: `
-    //         <p>The Basic tee is an honest new take on a classic. The tee uses super soft, pre-shrunk cotton for true comfort and a dependable fit. They are hand cut and sewn locally, with a special dye technique that gives each tee it's own look.</p>
-    //         <p>Looking to stock your closet? The Basic tee also comes in a 3-pack or 5-pack at a bundle discount.</p>
-    //     `,
-    //     details: [
-    //         'Only the best materials',
-    //         'Ethically and locally made',
-    //         'Pre-washed and pre-shrunk',
-    //         'Machine wash cold with similar colors',
-    //     ],
-    // },
 
     {
         id: 1,
@@ -528,7 +497,6 @@ export default {
         RadioGroup,
         RadioGroupLabel,
         RadioGroupOption,
-        StarIcon,
     },
     mounted() {
         this.addScrollWatch();
@@ -539,12 +507,12 @@ export default {
         addScrollWatch() {
             var myNav = this.$refs.mynav;
             window.onscroll = function () {
-                console.log(window.pageYOffset);
+
                 "use strict"; if (window.pageYOffset >= 20) {
-                    console.log('above 20')
+
                     myNav.classList.add("nav-transparent");
                 } else {
-                    console.log('below 20')
+
                     myNav.classList.remove("nav-transparent");
                 }
             };

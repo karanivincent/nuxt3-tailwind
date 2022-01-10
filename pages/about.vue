@@ -108,12 +108,11 @@ export default {
         addScrollWatch() {
             var myNav = this.$refs.mynav;
             window.onscroll = function () {
-                console.log(window.pageYOffset);
                 "use strict"; if (window.pageYOffset >= 20) {
-                    console.log('above 20')
+
                     myNav.classList.add("nav-transparent");
                 } else {
-                    console.log('below 20')
+
                     myNav.classList.remove("nav-transparent");
                 }
             };

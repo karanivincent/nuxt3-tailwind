@@ -56,11 +56,9 @@
 
 import 'animate.css';
 
-import { ChevronRightIcon } from '@heroicons/vue/solid'
 
 export default {
   components: {
-    ChevronRightIcon
   }
 
 }

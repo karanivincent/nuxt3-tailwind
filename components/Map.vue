@@ -47,12 +47,7 @@ export default {
             offices
         }
     },
-    methods: {
-        wachatu() {
-            console.log('mbona sasa?')
-            console.log('created', process.env.VUE_APP_GOOGLE_MAPS_KEY);
-        },
-    },
+
 
 
 }

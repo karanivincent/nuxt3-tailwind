@@ -61,7 +61,6 @@ import {
   TransitionChild,
   TransitionRoot,
 } from '@headlessui/vue'
-import { MenuIcon, QuestionMarkCircleIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/vue/outline'
 import Mobile from '~~/components/navigation/Mobile.vue'
 
 const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
@@ -222,12 +221,6 @@ export default {
     TabPanels,
     TransitionChild,
     TransitionRoot,
-    MenuIcon,
-    QuestionMarkCircleIcon,
-    SearchIcon,
-    ShoppingBagIcon,
-    XIcon,
-    Mobile
   },
   mounted() {
     this.addScrollWatch();
@@ -238,12 +231,12 @@ export default {
     addScrollWatch() {
       var myNav = this.$refs.mynav;
       window.onscroll = function () {
-        console.log(window.pageYOffset);
+
         "use strict"; if (window.pageYOffset >= 20) {
-          console.log('above 20')
+
           myNav.classList.add("nav-colored");
         } else {
-          console.log('below 20')
+
           myNav.classList.remove("nav-colored");
         }
       };

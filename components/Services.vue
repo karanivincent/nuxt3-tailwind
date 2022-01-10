@@ -1,32 +1,7 @@
-<!--
-  This example requires Tailwind CSS v2.0+
 
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
 <template>
     <div class="bg-gray-100">
         <div class="px-12 sm:px-10 py-20 flex flex-col mx-auto max-w-sm sm:max-w-3xl">
-            <!-- <div class>
-                <div class="py-12 flex items-center w-full">
-                    <div class="expanding-line"></div>
-                    <div class="text-gray-700 text-xl uppercase px-6">What we do</div>
-                    <div class="expanding-line"></div>
-                </div>
-                <p
-                    class="mt-4 text-gray-500"
-                >Focus allows you to plan 10 daily tasks, while also thinking ahead about what's next. Forget distracting digital apps and embrace these small, sturdy pieces of paper.</p>
-            </div>-->
             <div class="py-6">
                 <p class="text-gray-900 text-opacity-80 text-xl uppercase">
                     What we

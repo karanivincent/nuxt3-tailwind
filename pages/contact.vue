@@ -23,7 +23,7 @@
               >Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
             </div>-->
             <div class="mt-9">
-              <a href="tell:+254733147666" class="flex">
+              <a href="tell:+254773147666" class="flex">
                 <div class="flex-shrink-0">
                   <svg
                     class="w-6 h-6 text-gray-400"
@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="ml-3 text-base text-gray-500">
-                  <p>+254 (555) 123 4567</p>
+                  <p>+254 (710) 777 800</p>
                   <p class="mt-1 text-green-600">Mon-Fri 8am to 6pm EAT</p>
                 </div>
               </a>

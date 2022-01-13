@@ -38,8 +38,8 @@
 </template>
 <script>
 const offices = [
-    { id: 1, city: 'Nairobi', address: ['+254-710-777-800', '1st Floor Office Suites Building, Block A', 'Parklands Road, Nairobi, Kenya'] },
-    { id: 2, city: 'Mombasa', address: ['+254-773-147-66f6',] },
+    { id: 1, city: 'Nairobi', address: ['+254-773-147-666', '1st Floor Office Suites Building, Block A', 'Parklands Road, Nairobi, Kenya'] },
+    { id: 2, city: 'Mombasa', address: ['+254-701-777-300',] },
 ]
 export default {
     data() {

@@ -87,15 +87,12 @@ export default {
     Popover,
     PopoverButton,
     PopoverPanel,
-
   },
   data() {
     return {
       navigation,
     }
   },
-
-
 }
 </script>
 
